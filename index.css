@@ -1,0 +1,20 @@
+.digit {
+    display: inline-block;
+    font-size: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+.digit:first-of-type > span {
+    display: block;
+    animation: forty 1s linear forwards;
+}
+.digit:last-of-type > span {
+    display: block;
+    animation: two 1s linear forwards;
+}
+@keyframes forty {
+    to { transform: translateY(-188px); }
+}
+@keyframes two {
+    to { transform: translateY(-94px); }
+}
